@@ -83,7 +83,7 @@ async def play(_, message: Message):
     if chat_id in callsmusic.active_chats:
         position = await queues.put(chat_id, file=file)
         await response.edit_text(
-            f'<b>#️⃣ Queued at position {position}</b>...',
+            f'<b>تم اضافته في قائمة الانتظار | {position}</b>...',
         )
     else:
         await callsmusic.set_stream(chat_id, file)
