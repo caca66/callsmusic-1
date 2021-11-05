@@ -27,7 +27,7 @@ async def start(_, message: Message):
                         'المطور', url='https://t.me/C1CIC',
                     ),
                     InlineKeyboardButton(
-                        'Mira Channel', url='https://t.me/XkkkU',
+                        'قناة البوت', url='https://t.me/XkkkU',
                     ),
                 ],
             ],
