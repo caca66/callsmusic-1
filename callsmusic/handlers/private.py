@@ -9,14 +9,14 @@ from ..helpers.filters import other_filters2
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
     await message.reply_text(
-        f'<b>👋🏻 Hi {message.from_user.mention()}!</b>\n\n'
+        f'<b> - هلا عيني {message.from_user.mention()}!</b>\n\n'
         'I am Calls Music bot, '
         'I let you play music in group calls.'
         '\n\nThe commands I currently support are:\n\n'
-        '/play - play the replied audio file or YouTube video\n'
-        '/pause - pause the audio stream\n'
-        '/resume - resume the audio stream\n'
-        '/skip - skip the current audio stream\n'
+        '/play - بالرد على الاغنية او المقطع الصوتي للتشغيل\n'
+        '/pause - لايقاف الاغنيه بشكل مؤقت\n'
+        '/resume - لتشغيل الاغنيه بعد الايقاف المؤقت\n'
+        '/skip - لتخطي الاغنية\n'
         '/mute - mute the userbot\n'
         '/unmute - unmute the userbot\n'
         '/stop - clear the queue and remove the userbot from the call',
