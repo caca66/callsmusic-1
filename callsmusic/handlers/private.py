@@ -10,24 +10,24 @@ from ..helpers.filters import other_filters2
 async def start(_, message: Message):
     await message.reply_text(
         f'<b> - هلا عيني {message.from_user.mention()}!</b>\n\n'
-        'I am Calls Music bot, '
-        'I let you play music in group calls.'
-        '\n\nThe commands I currently support are:\n\n'
+        '**- بوت ميرا , '
+        '**بوت تشغيل اغاني او صوتيات في المحادثةالصوته والمرئية**'
+        '\n\**- هاذي اوامر البوت يا عيني**\n\n'
         '/play - بالرد على الاغنية او المقطع الصوتي للتشغيل\n'
         '/pause - لايقاف الاغنيه بشكل مؤقت\n'
         '/resume - لتشغيل الاغنيه بعد الايقاف المؤقت\n'
         '/skip - لتخطي الاغنية\n'
-        '/mute - mute the userbot\n'
-        '/unmute - unmute the userbot\n'
-        '/stop - clear the queue and remove the userbot from the call',
+        '/mute - لكتم البوت في المحادثة الصوتيه\n'
+        '/unmute - لرفع الكتم عن البوت\n'
+        '/stop - لايقاف جميع الاغاني الشغاله',
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        '🔈 Channel', url='https://t.me/callsmusic',
+                        'المطور', url='https://t.me/C1CIC',
                     ),
                     InlineKeyboardButton(
-                        'Group 💬', url='https://t.me/callsmusicchat',
+                        'Mira Channel', url='https://t.me/XkkkkU',
                     ),
                 ],
             ],
