@@ -30,7 +30,7 @@ async def pause(_, message: Message):
 @authorized_users_only
 async def resume(_, message: Message):
     (
-        await message.reply_text('<b>ابشر عيني {message.from_user.mention()}\n تم استئناف التشغيل</b>', False)
+        await message.reply_text('<b>ابشر عيني\n تم استئناف التشغيل</b>', False)
     ) if (
         callsmusic.resume(get_chat_id(message.chat))
     ) else (
@@ -51,7 +51,7 @@ async def stop(_, message: Message):
         except QueueEmpty:
             pass
         await callsmusic.stop(chat_id)
-        await message.reply_text('<b>ابشر عيني {message.from_user.mention()}\nتم ايقاف جميع الاغاني .</b>', False)
+        await message.reply_text('<b>ابشر عيني\nتم ايقاف جميع الاغاني .</b>', False)
 
 
 @Client.on_message(command('skip') & other_filters)
@@ -70,7 +70,7 @@ async def skip(_, message: Message):
                 chat_id,
                 queues.get(chat_id)['file'],
             )
-        await message.reply_text('<b>ابشر عيني {message.from_user.mention()}\nتم تخطي الاغنيه . </b>', False)
+        await message.reply_text('<b>ابشر عيني\nتم تخطي الاغنيه . </b>', False)
 
 
 @Client.on_message(command('mute') & other_filters)
