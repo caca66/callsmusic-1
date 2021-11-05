@@ -22,7 +22,7 @@ async def play(_, message: Message):
     audio = (
         message.reply_to_message.audio or message.reply_to_message.voice
     ) if message.reply_to_message else None
-    response = await message.reply_text('<b>ابشر عيني {message.from_user.mention()}\nجاري التشغيل ...</b>', False)
+    response = await message.reply_text('<b>ابشر عيني\nجاري التشغيل ...</b>', False)
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
