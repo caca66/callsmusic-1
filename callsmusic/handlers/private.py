@@ -9,10 +9,10 @@ from ..helpers.filters import other_filters2
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
     await message.reply_text(
-        f'<b> - هلا عيني {message.from_user.mention()}!</b>\n\n'
+        f'<b> - هلا عيني {message.from_user.mention()}</b>\n\n'
         '**- بوت ميرا , '
-        '**بوت تشغيل اغاني او صوتيات في المحادثةالصوته والمرئية**'
-        '\n\**- هاذي اوامر البوت يا عيني**\n\n'
+        '**بوت تشغيل اغاني او صوتيات في المحادثة الصوتيه والمرئيه**'
+        '\n**- هاذي اوامر البوت يا عيني**\n\n'
         '/play - بالرد على الاغنية او المقطع الصوتي للتشغيل\n'
         '/pause - لايقاف الاغنيه بشكل مؤقت\n'
         '/resume - لتشغيل الاغنيه بعد الايقاف المؤقت\n'
@@ -27,7 +27,7 @@ async def start(_, message: Message):
                         'المطور', url='https://t.me/C1CIC',
                     ),
                     InlineKeyboardButton(
-                        'Mira Channel', url='https://t.me/XkkkkU',
+                        'Mira Channel', url='https://t.me/XkkkU',
                     ),
                 ],
             ],
